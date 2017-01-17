@@ -20,9 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    CTDisplayView *view = [CTDisplayView new];
-    view.frame = CGRectMake(10, 10, [[UIScreen mainScreen] bounds].size.width - 20, [[UIScreen mainScreen] bounds].size.height - 180);
+    CTDisplayView *sview = [CTDisplayView new];
+    sview.frame = CGRectMake(10, 10, [[UIScreen mainScreen] bounds].size.width - 20, [[UIScreen mainScreen] bounds].size.height - 180);
     
     CTFrameParserConfig *config = [CTFrameParserConfig new];
     config.textColor = [UIColor redColor];
@@ -30,10 +29,10 @@
     config.width = [[UIScreen mainScreen] bounds].size.width - 20;
     
     CCTextContainer *data = [CTFrameParser parseTemplateFile:[[NSBundle mainBundle] pathForResource:@"content" ofType:@"json"] config:config];
-    view.data = data;
-    view.frame = CGRectMake(10, 10, [[UIScreen mainScreen] bounds].size.width - 20, data.height);
+    sview.data = data;
+    sview.frame = CGRectMake(10, 10, [[UIScreen mainScreen] bounds].size.width - 20, data.height);
     
-    [self.view addSubview:view];
+    [self.view addSubview:sview];
 }
 
 - (void)didReceiveMemoryWarning {

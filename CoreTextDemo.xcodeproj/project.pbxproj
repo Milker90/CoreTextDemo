@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9D3D79E91C8EADFA00439BBE /* CCCoreTextLinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D79E81C8EADFA00439BBE /* CCCoreTextLinkData.m */; };
+		9D898C341C9000B0001A95EC /* CCCoreTextTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D898C331C9000B0001A95EC /* CCCoreTextTextItem.m */; };
+		9D898C371C9000CC001A95EC /* CCCoreTextImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D898C361C9000CC001A95EC /* CCCoreTextImageItem.m */; };
+		9D898C3A1C9000E6001A95EC /* CCCoreTextLinkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D898C391C9000E6001A95EC /* CCCoreTextLinkItem.m */; };
 		9DCC0E011C8D257E00AD21E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC0E001C8D257E00AD21E9 /* main.m */; };
 		9DCC0E041C8D257E00AD21E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC0E031C8D257E00AD21E9 /* AppDelegate.m */; };
 		9DCC0E071C8D257E00AD21E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC0E061C8D257E00AD21E9 /* ViewController.m */; };
@@ -27,6 +30,12 @@
 /* Begin PBXFileReference section */
 		9D3D79E71C8EADFA00439BBE /* CCCoreTextLinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCoreTextLinkData.h; sourceTree = "<group>"; };
 		9D3D79E81C8EADFA00439BBE /* CCCoreTextLinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCoreTextLinkData.m; sourceTree = "<group>"; };
+		9D898C321C9000B0001A95EC /* CCCoreTextTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCoreTextTextItem.h; sourceTree = "<group>"; };
+		9D898C331C9000B0001A95EC /* CCCoreTextTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCoreTextTextItem.m; sourceTree = "<group>"; };
+		9D898C351C9000CC001A95EC /* CCCoreTextImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCoreTextImageItem.h; sourceTree = "<group>"; };
+		9D898C361C9000CC001A95EC /* CCCoreTextImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCoreTextImageItem.m; sourceTree = "<group>"; };
+		9D898C381C9000E6001A95EC /* CCCoreTextLinkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCoreTextLinkItem.h; sourceTree = "<group>"; };
+		9D898C391C9000E6001A95EC /* CCCoreTextLinkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCoreTextLinkItem.m; sourceTree = "<group>"; };
 		9DCC0DFC1C8D257E00AD21E9 /* CoreTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCC0E001C8D257E00AD21E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DCC0E021C8D257E00AD21E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D898C3B1C900104001A95EC /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				9D898C321C9000B0001A95EC /* CCCoreTextTextItem.h */,
+				9D898C331C9000B0001A95EC /* CCCoreTextTextItem.m */,
+				9D898C351C9000CC001A95EC /* CCCoreTextImageItem.h */,
+				9D898C361C9000CC001A95EC /* CCCoreTextImageItem.m */,
+				9D898C381C9000E6001A95EC /* CCCoreTextLinkItem.h */,
+				9D898C391C9000E6001A95EC /* CCCoreTextLinkItem.m */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
 		9DCC0DF31C8D257E00AD21E9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +121,7 @@
 				9DF0A12D1C8D771300DA3A37 /* CCCoreTextImageData.m */,
 				9D3D79E71C8EADFA00439BBE /* CCCoreTextLinkData.h */,
 				9D3D79E81C8EADFA00439BBE /* CCCoreTextLinkData.m */,
+				9D898C3B1C900104001A95EC /* Item */,
 				9DF0A1261C8D630700DA3A37 /* content.json */,
 				9DF0A1281C8D750200DA3A37 /* coretext-image-1.jpg */,
 				9DF0A1291C8D750200DA3A37 /* coretext-image-2.jpg */,
@@ -196,12 +219,15 @@
 				9DCC0E071C8D257E00AD21E9 /* ViewController.m in Sources */,
 				9DF0A12E1C8D771300DA3A37 /* CCCoreTextImageData.m in Sources */,
 				9D3D79E91C8EADFA00439BBE /* CCCoreTextLinkData.m in Sources */,
+				9D898C371C9000CC001A95EC /* CCCoreTextImageItem.m in Sources */,
 				9DCC0E041C8D257E00AD21E9 /* AppDelegate.m in Sources */,
 				9DCC0E181C8D259F00AD21E9 /* CTDisplayView.m in Sources */,
 				9DCC0E221C8D486F00AD21E9 /* CCTextContainer.m in Sources */,
 				9DCC0E1C1C8D353200AD21E9 /* CTFrameParserConfig.m in Sources */,
+				9D898C3A1C9000E6001A95EC /* CCCoreTextLinkItem.m in Sources */,
 				9DCC0E011C8D257E00AD21E9 /* main.m in Sources */,
 				9DCC0E1F1C8D485A00AD21E9 /* CTFrameParser.m in Sources */,
+				9D898C341C9000B0001A95EC /* CCCoreTextTextItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
